@@ -342,8 +342,9 @@ namespace Calendar
 
         private void wdw_Main_LocationChanged(object sender, EventArgs e)
         {
+            //https://social.msdn.microsoft.com/Forums/windows/zh-CN/266e26bd-903c-403c-a31f-5598992fc97d/visual-presentationsource?forum=wpfzhchs
 
-            var location = this.PointToScreen(new Point(0, 0));
+            //var location = this.PointToScreen(new Point(0, 0));
             MainWindow._dayOverview.Left = location.X + this.Width;
             MainWindow._dayOverview.Top = location.Y + 20;
             MainWindow._dayOverview.Activate();
@@ -355,8 +356,10 @@ namespace Calendar
             _dayOverview.Hide();
         }
 
+        Point location;
         private void wdw_Main_GotFocus(object sender, RoutedEventArgs e)
         {
+            location = this.PointToScreen(new Point(0, 0));
         }
 
         private void wdw_Main_Loaded(object sender, RoutedEventArgs e)
