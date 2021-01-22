@@ -26,7 +26,7 @@
     <DockPanel x:Name="MainDock" HorizontalAlignment="Left" Height="620" LastChildFill="False" VerticalAlignment="top" Width="650" >
 
         <Grid Height="42" VerticalAlignment="Top" DockPanel.Dock="Top" Width="650">
-            <Image x:Name="img_Header" Height="42" VerticalAlignment="Top" MouseDown="img_Header_MouseDown">
+            <Image x:Name="img_Header" MouseDown="img_Header_MouseDown">
                 <Image.Source>
                     <BitmapImage UriSource="Images\BorderTopFull.png"></BitmapImage>
                 </Image.Source>
@@ -72,18 +72,18 @@
         </Grid>
 
 
-        <Image Height="9" Width="650" DockPanel.Dock="Bottom" SnapsToDevicePixels="True" VerticalAlignment="Bottom">
+        <Image DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderBottom.png"></BitmapImage>
             </Image.Source>
         </Image>
-        <Image Height="569" Width="11" DockPanel.Dock="Left" VerticalAlignment="top" HorizontalAlignment="Left">
+        <Image DockPanel.Dock="Left" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderLeft.png"></BitmapImage>
             </Image.Source>
         </Image>
 
-        <Image Height="569" Width="10" DockPanel.Dock="right" VerticalAlignment="top" HorizontalAlignment="right" SnapsToDevicePixels="True">
+        <Image DockPanel.Dock="right" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SnapsToDevicePixels="True">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderRight.png"></BitmapImage>
             </Image.Source>
