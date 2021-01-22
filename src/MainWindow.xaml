@@ -1,6 +1,4 @@
-﻿
-
-<Window x:Name="wdw_Main" x:Class="Calendar.MainWindow"
+﻿<Window x:Name="wdw_Main" x:Class="Calendar.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="WoW Calendar" Height="620" Width="650" AllowsTransparency="True"
@@ -26,7 +24,7 @@
     <DockPanel x:Name="MainDock" HorizontalAlignment="Left" Height="620" LastChildFill="False" VerticalAlignment="top" Width="650" >
 
         <Grid Height="42" VerticalAlignment="Top" DockPanel.Dock="Top" Width="650">
-            <Image x:Name="img_Header" MouseDown="img_Header_MouseDown">
+            <Image x:Name="img_Header" MouseDown="img_Header_MouseDown" Stretch="None">
                 <Image.Source>
                     <BitmapImage UriSource="Images\BorderTopFull.png"></BitmapImage>
                 </Image.Source>
@@ -72,18 +70,18 @@
         </Grid>
 
 
-        <Image DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Image DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stretch="None">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderBottom.png"></BitmapImage>
             </Image.Source>
         </Image>
-        <Image DockPanel.Dock="Left" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Image DockPanel.Dock="Left" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stretch="None">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderLeft.png"></BitmapImage>
             </Image.Source>
         </Image>
 
-        <Image DockPanel.Dock="right" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SnapsToDevicePixels="True">
+        <Image DockPanel.Dock="right" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SnapsToDevicePixels="True" Stretch="None">
             <Image.Source>
                 <BitmapImage UriSource="Images\BorderRight.png"></BitmapImage>
             </Image.Source>
